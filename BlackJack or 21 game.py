@@ -29,12 +29,12 @@ def main():
                     print("You have ", player_hand[0], suits[0], "and a", player_hand[1], "of", suits[1])
             
 
-            if sum(dealer_hand) <= 21:
-                dealer_hand.append(random.randint(1, 11))
-            if sum(dealer_hand) == 21:
-                print("Dealer has 21 and wins!")
-            elif sum(dealer_hand) > 21:
-                print("Dealer has busted!")
+                if sum(dealer_hand) <= 21:
+                    dealer_hand.append(random.randint(1, 11))
+                if sum(dealer_hand) == 21:
+                    print("Dealer has 21 and wins!")
+                elif sum(dealer_hand) > 21:
+                    print("Dealer has busted!")
 
 
             while sum(player_hand) < 21:
