@@ -99,4 +99,6 @@ def main():
 
 
 printTitle()
-main()
+
+if __name__ == "__main__":
+    main()
